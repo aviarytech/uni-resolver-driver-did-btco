@@ -10,11 +10,11 @@
     "dev": "bun --hot index.ts"
   },
   "keywords": [
-    "did:btco"
+    "did:btco did btco"
   ],
   "license": "Unlicense",
   "dependencies": {
-    "btc-ordinal-dids": "^0.0.9",
+    "btc-ordinal-dids": "^0.0.10",
     "elysia": "^0.7.29"
   }
 }
