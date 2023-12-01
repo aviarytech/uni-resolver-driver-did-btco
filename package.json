@@ -4,7 +4,9 @@
   "description": "BTC Ordinal DIDs Universal Resolver Driver",
   "main": "index.ts",
   "scripts": {
-    "start": "bun index.ts",
+    "prestart": "bun run build",
+    "start": "bun build/index.js",
+    "build": "bun build --target=bun ./index.ts --outdir=build",
     "dev": "bun --hot index.ts"
   },
   "keywords": [
@@ -12,7 +14,7 @@
   ],
   "license": "Unlicense",
   "dependencies": {
-    "btc-ordinal-dids": "^0.0.5",
+    "btc-ordinal-dids": "^0.0.9",
     "elysia": "^0.7.29"
   }
 }

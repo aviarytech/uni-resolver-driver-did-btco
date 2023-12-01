@@ -5,14 +5,13 @@ FROM oven/bun:1
 # build uni-resolver-driver-did-btco
 
 WORKDIR /usr/src/app
+
+COPY index.ts ./
 COPY package.json ./
+COPY bun.lockb ./
+
 RUN bun install
-COPY . .
-
-# variables
-
-ENV uniresolver_driver_did_example_exampleSetting=exampleSetting
-ENV uniresolver_driver_did_btco_ORD_SIGNET_API=https://modern-ghosts-cadmp.loca.lt
+RUN bun run build
 
 # done
 
