@@ -8,3 +8,6 @@ output/
 *.log
 /.idea/
 *.iml
+.vscode
+.env
+.DS_Store

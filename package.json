@@ -1,18 +1,18 @@
 {
-  "name": "uni-resolver-driver-did-example",
+  "name": "uni-resolver-driver-did-btco",
   "version": "1.0.0",
-  "description": "Example Universal Resolver Driver",
-  "main": "index.js",
+  "description": "BTC Ordinal DIDs Universal Resolver Driver",
+  "main": "index.ts",
   "scripts": {
-    "prestart": "npm install",
-    "start": "node index.js"
+    "start": "bun index.ts",
+    "dev": "bun --hot index.ts"
   },
   "keywords": [
-    "swagger"
+    "did:btco"
   ],
   "license": "Unlicense",
-  "private": true,
   "dependencies": {
-    "express": "4.18.1"
+    "btc-ordinal-dids": "^0.0.5",
+    "elysia": "^0.7.29"
   }
 }
