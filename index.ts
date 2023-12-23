@@ -1,6 +1,6 @@
 import { Elysia } from 'elysia'
 // @ts-ignore
-import { resolve } from 'btc-ordinal-dids';
+import { resolve } from 'btco';
 
 const app = new Elysia()
   .get('/1.0/identifiers/:identifier', async ({ params: { identifier } }) => {
